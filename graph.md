@@ -25,7 +25,7 @@
 
 - Wireless LANs
 
-  - ==IEEE 802.11==(==Wi-Fi)
+  - ==IEEE 802.11==(==Wi-Fi==)
 
     | NO.     | IEEE standard      | Speed         | Frequency                   | Technology    |
     | ------- | ------------------ | ------------- | --------------------------- | ------------- |
@@ -37,9 +37,24 @@
     | Wi-fi 6 | IEEE 802.11.==ax== | ==9.60== Gbps | ==2.4== , ==5== , ==6== GHz | OFDM and MIMO |
     | Wi-fi 7 | IEEE 802.11.==be== | ==30== Gbps   | ==2.4== , ==5== , ==6== GHz |               |
 
-    
+- WLAN Security
+
+  ```mermaid
+  graph
+  WLAN_security --- Authentication
+  WLAN_security --- Encryption
+  
+  Authentication --- EAP__Extensiible_Authentication_Protocol
+  Encryption --- WAP__Wi-Fi_Alliance
+  Encryption --- TKIP
+  Encryption --- AES
+  ```
+
+  
 
 ## NAT
+
+- NAT operates at ==Layer 3==(Network Layer) Technology
 
 ```mermaid
 graph 
@@ -54,7 +69,13 @@ graph LR
 NAT_types --- Static_NAT
 NAT_types --- Dynamic_NAT
 NAT_types --- PAT__Port_Address_Translation
-NAT_types --- Static_NAT_Overloading:port_forwarding
+```
+
+```mermaid
+graph
+Three_ways_to_transition_from_ipv4_to_ipv6 --- Dual_stack
+Three_ways_to_transition_from_ipv4_to_ipv6 --- Tunneling
+Three_ways_to_transition_from_ipv4_to_ipv6 --- Protocol_Translation
 ```
 
 
@@ -90,5 +111,18 @@ Dedicated_network --- xDSL:HDSL,SDSL,ADSL...
 Dedicated_network --- SONET__Synchronous_Optical_Network
 ```
 
+- Dedicated Network
 
+  ```mermaid
+  graph
+  T1\E1_leased_line --- CSU
+  T1\E1_leased_line --- DSU
+  ```
+
+  ```mermaid
+  graph
+  DSL --- DSLAM
+  ```
+
+  
 

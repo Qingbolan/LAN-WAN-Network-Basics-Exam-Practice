@@ -12,29 +12,6 @@ The LAN-WAN Network Basics Exam Practice is a study guide to help individuals pr
 - Chapter 6: WANs Technology - Circuit-switched Networks
 - Chapter 7: WANs Technology - Packet-switched Networks
 
-```mermaid
-graph LR
-WAN --- Dedicated_network
-WAN --- Circuit-switched_network
-WAN --- Package-switched_network
-
-Package-switched_network --- X.25
-Package-switched_network --- frame_relay
-Package-switched_network --- ATM
-Package-switched_network --- SMDS
-
-Circuit-switched_network --- POTs
-Circuit-switched_network --- Narrowband_ISDN
-
-Dedicated_network --- E1\T1_E3\T3_leased_line
-Dedicated_network --- xDSL:HDSL,SDSL,ADSL...
-Dedicated_network --- SONET__Synchronous_Optical_Network
-```
-
-|
-
-
-
 ## Chapter 1: LANs Technology – Switched LANs
 
 ### key words
